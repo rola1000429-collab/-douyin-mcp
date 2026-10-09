@@ -1,0 +1,16 @@
+[project]
+name = "douyin-mcp"
+version = "0.1.0"
+description = "MCP server that lets AI browse, like, comment, and publish on Douyin via Playwright"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2.0", "playwright>=1.44"]
+
+[project.scripts]
+douyin-mcp = "server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]
